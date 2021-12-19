@@ -5,19 +5,16 @@ public class Armstrong {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a number:");
         int n = sc.nextInt();
-        int x;
+        int x=n;
         int digit;
         int sum = 0;
-        int c = 0;
-        x= n;
-        for (;x != 0; x/= 10)
-        {
-            c++;
-        }
-        x=n;
-        for (;x!= 0; x /= 10)
+        int c ;
+        while(x>0)
         {
             digit = x % 10;
+            x/=10;
+            String z=Integer.toString(n);
+            c=z.length();
             sum += Math.pow(digit, c);
         }
         if(sum == n)
