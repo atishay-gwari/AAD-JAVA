@@ -5,7 +5,7 @@ public class Small {
     {
         int ar[]=new int[]{25,12,56,8,98,2};
         int min=ar[0];
-        for(int i=0;i<ar.length;i++)
+        for(int i=0;i<ar.length;i++)//to go through the elements of the array
         {
             if(ar[i]<min)
             {
